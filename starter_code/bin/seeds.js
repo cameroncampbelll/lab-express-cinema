@@ -83,3 +83,12 @@ const movies = [
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"],
   },
 ];
+
+mongoose
+    .connect(MONGO_URL, {
+        useCreateIndex: true,
+        useNewUrlParser:true,
+        useUnifiedTopology: true
+    })
+    .then (x => console.log('Connected')
+    "${x.connections[0].name}")
