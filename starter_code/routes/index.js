@@ -7,4 +7,9 @@ router.get("/", (req, res, next) => {
   res.json({ message: "index" });
 });
 
+router.get("/", (req, res, next) => {
+  console.log("called");
+  res.json({ message: "index" });
+});
+
 module.exports = router;
